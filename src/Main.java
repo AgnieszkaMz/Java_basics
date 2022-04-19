@@ -9,7 +9,12 @@ public class Main {
         System.out.println("Jak masz na nazwisko?");
         String surname = scanner.nextLine();
         System.out.println("Ile masz lat?");
-        String age = scanner.nextLine();
-        System.out.println(MessageFormat.format("Cześć, {0} {1} {2}", name, surname, age));
-    }
-}
+        int age = scanner.nextInt();
+        System.out.println("Cześć," + name + surname + age);
+        if (age > 18){
+            System.out.println("Jest super!");
+        } else {
+            System.out.println("Jest lipa!");
+        }
+            }
+        }
